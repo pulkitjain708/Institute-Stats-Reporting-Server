@@ -1,0 +1,223 @@
+<%-include("navbar");-%>
+<div class="row">
+  <div class="input-field col s4">
+    <input id="search" type="text" />
+    <label for="search">search here .....</label>
+  </div>
+  <div class="input-field col s3">
+    <select id="limit">
+      <option value="" disabled selected>Choose Limit</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+    </select>
+    <label>Limit per Page</label>
+  </div>
+  <div class="col">
+    <ul class="pagination" id="pages">
+      <li class="disabled">
+        <a href="#!"><i class="material-icons">chevron_left</i></a>
+      </li>
+      <li class="waves-effect"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="disabled">
+        <a href="#!"><i class="material-icons">chevron_right</i></a>
+      </li>
+    </ul>
+  </div>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Course</th>
+      <th>Fees</th>
+      <th>Duration(in months)</th>
+      <th>Active Status</th>
+      <th>cid</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="courseTable"></tbody>
+</table>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h5 id="cname"></h5>
+    <div class="row">
+      <form class="col s12" action="/admin/updateCourse" method="post">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="course" type="text" name="cname" class="validate" />
+            <label for="course">Course Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="fees" type="text" class="validate" name="fees" />
+            <label for="fees">Fees</label>
+          </div>
+        </div>
+        <input type="text" name="id" hidden id="id" />
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="duration" type="text" class="validate" name="duration" />
+            <label for="duration">Duration</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="cid" type="text" class="validate" name="cid" />
+            <label for="cid">Course Id</label>
+          </div>
+          <div class="input-field col s2">
+            <div class="switch">
+              <label>
+                Off
+                <input name="status" id="status" type="checkbox" />
+                <span class="lever"></span>
+                On
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn waves-effect waves-light" type="submit" name="action">
+            Update
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  var table = document.getElementById("courseTable");
+  let text = "";
+  let limit = 5;
+  let page = 1;
+
+  function callFetch(text, limit, page) {
+    table.innerHTML = "";
+    fetch("/paginate/courseData", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        limit,
+        page,
+        text
+      })
+    })
+      .then(res => res.json())
+      .then(data => {
+        drawTable(data, 0);
+      });
+  }
+
+  function editStaff(data) {
+    data = JSON.parse(data);
+    document.getElementById("cname").innerText = data.cname;
+    document.getElementById("course").value = data.cname;
+    document.getElementById("fees").value = data.fees;
+    document.getElementById("id").value = data._id;
+    document.getElementById("duration").value = data.duration;
+    document.getElementById("cid").value = data.cid;
+    document.getElementById("status").checked = data.status;
+  }
+
+  function deleteCourse(id) {
+    document.getElementById(id).style.display = "none";
+    fetch("/admin/deleteCourse", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ _id: id })
+    })
+      .then(res => {
+        //  console.log(res)
+        window.location.href = "/admin/viewCourse";
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }
+
+  function makeTR(id) {
+    var tr = document.createElement("tr");
+    tr.setAttribute("id", id);
+    return tr;
+  }
+
+  function makeTD(data) {
+    var td = document.createElement("td");
+    td.innerText = data;
+    return td;
+  }
+
+  async function appendTRTD(id, data) {
+    var tr = makeTR(id);
+    i = 1;
+    while (i < Object.values(data).length) {
+      var td = makeTD(Object.values(data)[i]);
+      tr.appendChild(td);
+      i++;
+    }
+    var btn1 = document.createElement("a");
+    btn1.setAttribute("class", "waves-effect waves-light btn modal-trigger");
+    btn1.setAttribute("href", "#modal1");
+    btn1.innerText = "EDIT";
+    btn1.setAttribute("onclick", `editStaff('${JSON.stringify(data)}')`);
+    tr.appendChild(btn1);
+    if (!data.status) {
+      var btn2 = document.createElement("button");
+      btn2.setAttribute("class", "waves-effect waves-light btn");
+      btn2.innerText = "DELETE";
+      btn2.setAttribute("onclick", `deleteCourse('${id}')`);
+      tr.append(btn2);
+    }
+    return tr;
+  }
+
+  function drawTable(data, i) {
+    if (i < data.length) {
+      appendTRTD(data[i]._id, data[i]).then(tr => {
+        table.append(tr);
+        drawTable(data, ++i);
+      });
+    } else if (i == data.length) {
+      return;
+    }
+  }
+
+  // fetch("/staffData",{method:"post"})
+  // .then(res=>res.json())
+  // .then(data=>drawTable(data,0))
+
+  callFetch(text, limit, page);
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll(".modal");
+    var instances = M.Modal.init(elems);
+    var elems2 = document.querySelectorAll("select");
+    var instances = M.FormSelect.init(elems2);
+  });
+
+  document.getElementById("search").addEventListener("keydown", function (e) {
+    text = e.target.value;
+    callFetch(text, limit, page);
+  });
+
+  document.getElementById("limit").addEventListener("change", function (e) {
+    limit = e.target.value;
+    callFetch(text, limit, page);
+  });
+
+  document.getElementById("pages").onclick = function (e) {
+    if (e.target.tagName == "A") {
+      var a = document.getElementsByClassName("active");
+      for (i = 0; i < a.length; i++) {
+        a[i].classList.toggle("active");
+      }
+      page = Number(e.target.innerText);
+      e.target.parentNode.classList.toggle("active");
+    }
+    callFetch(text, limit, page);
+  };
+</script>

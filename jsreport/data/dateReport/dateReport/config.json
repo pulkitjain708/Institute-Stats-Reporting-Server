@@ -1,0 +1,24 @@
+{
+    "folder": {
+        "shortid": "KGWRdN9"
+    },
+    "shortid": "BkgLj9YB4U",
+    "name": "dateReport",
+    "recipe": "chrome-pdf",
+    "engine": "ejs",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": "2020-02-27T18:30:40.979Z",
+    "modificationDate": {
+        "$$date": 1583298207896
+    },
+    "_id": "QuO0CNBThYw6B1dL",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "rJxLGcsHVI"
+        }
+    ],
+    "data": null
+}

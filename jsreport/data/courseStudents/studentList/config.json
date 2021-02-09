@@ -1,0 +1,23 @@
+{
+    "folder": {
+        "shortid": "7xju2vr"
+    },
+    "shortid": "r1lcivTEVL",
+    "name": "studentList",
+    "recipe": "chrome-pdf",
+    "engine": "ejs",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": "2020-02-27T04:39:46.674Z",
+    "modificationDate": {
+        "$$date": 1582808497682
+    },
+    "_id": "19hGjLx6KOG13RlH",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "H1xOCD6N4I"
+        }
+    ]
+}

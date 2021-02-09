@@ -1,0 +1,17 @@
+{
+  "name": "jsreport-server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "jsreport": "jsreport"
+  },
+  "jsreport": {
+    "entryPoint": "server.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jsreport": "2.6.1",
+    "jsreport-ejs": "^2.2.0",
+    "sendgrid": "^5.2.3"
+  }
+}

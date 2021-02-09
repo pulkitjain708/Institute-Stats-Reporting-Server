@@ -1,0 +1,24 @@
+{
+    "folder": {
+        "shortid": "kwDUZ7T"
+    },
+    "shortid": "Sygbnsd078",
+    "name": "main",
+    "recipe": "chrome-pdf",
+    "engine": "ejs",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": "2020-02-22T10:05:42.957Z",
+    "modificationDate": {
+        "$$date": 1582746913610
+    },
+    "_id": "utK3RhHCmzj95TFW",
+    "$entitySet": "templates",
+    "data": null,
+    "scripts": [
+        {
+            "shortid": "BJgCpQ0AQ8"
+        }
+    ]
+}

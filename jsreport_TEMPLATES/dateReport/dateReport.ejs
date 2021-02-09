@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        DateReport
+    </title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <u>
+            <h2><%-d.type%> Report</h2>
+        </u>
+        <p>as from <%-d.from.split("T")[0]%> to <%-d.to.split("T")[0]%><p>
+                for <i>Course</i> <b><%-d.cs%></b>
+    </center>
+    <hr>
+    <table>
+        <tr>
+            <th>EID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            <th>DoE</th>
+        </tr>
+        <%for(i=0;i<d.result.length;i++){%>
+        <tr>
+            <td><%-d.result[i].eid%></td>
+            <td><%-d.result[i].name%></td>
+            <td><%-d.result[i].email%></td>
+            <td><%-d.result[i].phone%></td>
+            <td><%-d.result[i].DoE%></td>
+        </tr>
+        <%}%>
+  </table>
+<hr>
+  </body>
+</html>

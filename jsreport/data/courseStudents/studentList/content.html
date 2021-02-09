@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>
+        Student List
+    </title>
+     <style>
+            table, th, td {
+  border: 1px solid black;
+}
+        </style>
+</head>
+<body>
+    <center>
+        <br>
+        <br>
+        <h3><u>Student List in Varoius Courses</u></h3>
+       <i> <h4 id="date"></h4></i>
+    </center>
+   
+    <%for(course=0;course<data.length;course++){%>
+    <center><h2><b>Course : <%-data[course].n-%></b></h2></center>
+       <h3>Registered Students Data</h3>
+       <table>
+           <tr>
+               <th>rid</th>
+               <th>Name</th>
+               <th>email</th>
+               <th>phone</th>
+               <th>DoE</th>
+               </tr>
+               <%for (j=0;j<data[course].r.length;j++){%>
+               <tr>
+                   <td><%-data[course].r[j].rid-%></td>
+                   <td><%-data[course].r[j].name-%></td>
+                   <td><%-data[course].r[j].email-%></td>
+                   <td><%-data[course].r[j].phone-%></td>
+                   <td><%-data[course].r[j].DoE-%></td>
+               </tr>
+               <%}%>
+        </table>
+         <h3>Enquired Students Data</h3>
+       <table>
+           <tr>
+               <th>eid</th>
+               <th>Name</th>
+               <th>email</th>
+               <th>phone</th>
+               <th>DoE</th>
+               </tr>
+               <%for (k=0;k<data[course].e.length;k++){%>
+               <tr>
+                   <td><%-data[course].e[k].eid-%></td>
+                   <td><%-data[course].e[k].name-%></td>
+                   <td><%-data[course].e[k].email-%></td>
+                   <td><%-data[course].e[k].phone-%></td>
+                   <td><%-data[course].e[k].DoE-%></td>
+               </tr>
+               <%}%>
+        </table>
+
+    <%}%>
+<script>
+    var date=new Date()
+    d=date.getFullYear()+"/"+(1+date.getMonth())+"/"+date.getDate()
+    document.getElementById("date").innerText="Report Generated on "+d
+</script>
+</body>
+</html>

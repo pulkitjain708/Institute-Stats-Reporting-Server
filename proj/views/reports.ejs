@@ -1,0 +1,140 @@
+<%-include('navbar');-%>
+<u>
+  <h5 class="center">Enquiries / Registrations Reports</h5>
+</u>
+<br />
+<hr />
+
+<center>
+  <button onclick="f('main')">Generate All Enquiries Report</button>
+  <button onclick="f('reg')">Generate All Registrations Report</button>
+  <button onclick="f('studentList')">Publish Student Report Data</button>
+</center>
+<hr />
+
+<center>Filter data according to Dates and Course</center>
+<!-- action="/paginate/filter" method="post" -->
+<form>
+  <div class="row">
+    <div class="input-field col">
+      <select name="course" id="course">
+        <option value="1">Registrations</option>
+        <option value="2">Enquiries</option>
+      </select>
+      <label>Select Collection</label>
+    </div>
+    <div class="input-field col">
+      <select name="id" id="id">
+      </select>
+      <label>Select Course</label>
+    </div>
+    <div class="input-field col">
+      <label for="from">From Date</label>
+      <input type="text" name="from" id="from" class="datepicker" />
+    </div>
+    <div class="input-field col">
+      <label for="to">To Date</label>
+      <input type="text" id="to" name="to" class="datepicker" />
+    </div>
+    <div class="input-field col">
+      <button type="button" onclick="dateRepo()">GET DATA</button>
+    </div>
+  </div>
+</form>
+<script>
+  var ab = ""
+  document.addEventListener("DOMContentLoaded", function () {
+    var elems = document.querySelectorAll("select");
+    var instances = M.FormSelect.init(elems, {});
+
+    var dt = document.querySelectorAll(".datepicker");
+    var instances = M.Datepicker.init(dt, {
+      format: "yyyy-mm-dd"
+    });
+  });
+
+  function f(a) {
+    fetch("http://localhost:8001/api/report", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        template: { name: a },
+        options: { reports: { save: true } }
+      })
+    })
+      .then(resp => {
+        return resp.arrayBuffer();
+      })
+      .then(resp => {
+        const file = new Blob([resp], { type: "application/pdf" });
+        const fileURL = URL.createObjectURL(file);
+        const link = document.createElement("a");
+        link.href = fileURL;
+        link.download = "Report" + new Date() + ".pdf";
+        link.click();
+      });
+  }
+  var idcb = document.getElementById("id")
+  var select = document.getElementById("course")
+  function dateRepo() {
+    let to = new Date(document.getElementById("to").value);
+    let from = new Date(document.getElementById("from").value);
+
+    if (from >= to) {
+      alert("Date have to be valid");
+      return
+    }
+
+    fetch("http://localhost:8001/api/report", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        template: { name: "dateReport" },
+        options: {
+          reports: { save: true }
+        },
+        data: {
+          collection: select.options[select.selectedIndex].value,
+          to: document.getElementById("to").value,
+          from: document.getElementById("from").value,
+          course: idcb.options[idcb.selectedIndex].value,
+          cs: idcb.options[idcb.selectedIndex].text
+        }
+      })
+    }).then(resp => {
+      return resp.arrayBuffer();
+    })
+      .then(resp => {
+
+        const file = new Blob([resp], { type: "application/pdf" });
+        const fileURL = URL.createObjectURL(file);
+        const link = document.createElement("a");
+        link.href = fileURL;
+        link.download = "Report" + new Date() + ".pdf";
+        link.click();
+      });
+
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("http://localhost:8000/paginate/courseName", {
+      method: "POST"
+      //headers:{"Content-Type":"application/json"}
+    }).then(res => res.json())
+      .then(data => {
+        console.log(data);
+        var select = document.getElementById("id");
+        for (i = 0; i < data.length; i++) {
+          var option = document.createElement("option");
+          option.innerText = data[i].cname;
+          option.setAttribute("value", `${data[i]._id}`);
+          select.append(option);
+        }
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems);
+      });
+  })
+</script>

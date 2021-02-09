@@ -1,0 +1,54 @@
+<%-include("navbar");-%> <% if(errors) {%> <%for(i=0;i<errors.length;i++){%>
+  <div class="chip">
+    <%-errors[i].msg-%>
+    <i class="close material-icons">close</i>
+  </div>
+  <%}%> <%}%>
+
+  <h4 class="center-align">Add Course</h4>
+  <div class="row">
+    <div class="col s6 m6 offset-m4 offset-s4">
+      <div class="card-panel">
+        <span>
+          <form action="/admin/addCourse" id="form" method="post">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="name" type="text" name="cname" class="validate" />
+                <label for="name">Course Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="fees" type="text" name="fees" class="validate" />
+                <label for="fees">Fees</label>
+              </div>
+              <div class="input-field col s4">
+                <select name="duration">
+                  <option value="" disabled selected
+                    >Choose Course Duration</option
+                  >
+                  <option value="1">1 Month</option>
+                  <option value="2">2 Month</option>
+                  <option value="3">3 Month</option>
+                  <option value="4">4 Month</option>
+                  <option value="5">5 Month</option>
+                  <option value="6">6 Month</option>
+                </select>
+                <label>Course Duration</label>
+              </div>
+              <input type="submit" id="submit" value="Submit" />
+            </div>
+            <!-- </div> -->
+          </form>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var elems = document.querySelectorAll("select");
+      var instances = M.FormSelect.init(elems);
+    });
+  </script>
+</errors.length;i++){%>

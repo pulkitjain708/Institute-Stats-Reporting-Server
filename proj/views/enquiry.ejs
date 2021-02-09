@@ -1,0 +1,173 @@
+<%-include("navbar");-%> <% if(errors) {%> <%for(i=0;i<errors.length;i++){%>
+  <div class="chip">
+    <%-errors[i].msg-%>
+    <i class="close material-icons">close</i>
+  </div>
+  <%}%> <%}%>
+  <h4 class="center-align">Enquiry Form Addition</h4>
+
+  <div class="row">
+    <div class="col s12 m12 l12 xl12">
+      <div class="card-panel white">
+        <span>
+          <form action="/admin/addEnquiry" method="post" id="form">
+            <div class="row">
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <input id="sname" type="text" name="name" />
+                  <label for="sname">Name of Student</label>
+                </div>
+              </div>
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <input id="fname" type="text" name="father_name" />
+                  <label for="fname">Father Name</label>
+                </div>
+              </div>
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <input type="text" id="dob" class="datepicker" name="dob" />
+                  <label for="dob">Date of Birth</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="validate"
+                  />
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <input
+                    id="fphone"
+                    class="phone"
+                    name="father_no"
+                    flag="2"
+                    type="text"
+                  />
+                  <label for="fphone">Father Mobile Number</label>
+                </div>
+              </div>
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <input
+                    id="phone"
+                    class="phone"
+                    name="phone"
+                    flag="1"
+                    type="text"
+                  />
+                  <label for="phone">Phone Number</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <input id="qual" name="qual" type="text" />
+                  <label for="qual">Qualification</label>
+                </div>
+              </div>
+              <div class="col l6 m6 s6 xl6">
+                <div class="input-field">
+                  <input id="ic" name="currentCollege" type="text" />
+                  <label for="ic">Current College/Institute Name</label>
+                </div>
+              </div>
+              <div class="col l2 m2 s2 x2">
+                <p>
+                  <label>
+                    <input name="gender" type="radio" value="Male" checked />
+                    <span>Male</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="gender" type="radio" value="Female" />
+                    <span>Female</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l12 m12 s12 xl12">
+                <!-- <div class="row"> -->
+                <div class="input-field">
+                  <textarea
+                    name="address"
+                    id="textarea2"
+                    class="materialize-textarea"
+                    data-length="120"
+                  ></textarea>
+                  <label for="textarea2">Address</label>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l4 m4 s4 xl4">
+                <div class="input-field">
+                  <select name="courseId" id="course">
+                    <!-- <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option> -->
+                  </select>
+                  <label>Course Interested</label>
+                </div>
+              </div>
+              <div class="col l6 m6 s6 xl6">
+                <div class="input-field">
+                  <input name="fromWhere" id="info" type="text" />
+                  <label for="info">From where you got our Information</label>
+                </div>
+              </div>
+              <div class="col">
+                <button
+                  class="btn waves-effect waves-light"
+                  id="send"
+                  type="submit"
+                  name="action"
+                >
+                  Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var elems1 = document.querySelectorAll(".datepicker");
+      var instances1 = M.Datepicker.init(elems1, {
+        format: "yyyy-mm-dd"
+      });
+      fetch("/paginate/courseName", {
+        method: "POST"
+        //headers:{"Content-Type":"application/json"}
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+          var select = document.getElementById("course");
+          for (i = 0; i < data.length; i++) {
+            var option = document.createElement("option");
+            option.innerText = data[i].cname;
+            option.setAttribute("value", `${data[i]._id}`);
+            select.append(option);
+          }
+          var elems = document.querySelectorAll("select");
+          var instances = M.FormSelect.init(elems);
+        });
+    });
+  </script>
+</errors.length;i++){%>

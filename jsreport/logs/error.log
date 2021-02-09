@@ -1,0 +1,414 @@
+2020-02-22T09:36:40.613Z - error: Error when processing OData POST: /odata/scripts Error: Can not find parent folder for entity "script" (entitySet: scripts)
+    at getDirectoryPath (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:18:13)
+    at persist (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:168:44)
+    at lock (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:302:46)
+    at lock (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:294:18)
+2020-02-22T09:47:10.780Z - error: Error when processing OData POST: /odata/assets Error: Can not find parent folder for entity "main-header.html" (entitySet: assets)
+    at getDirectoryPath (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:18:13)
+    at persist (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:168:44)
+    at lock (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:302:46)
+    at lock (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-fs-store\lib\persistence.js:294:18)
+2020-02-22T14:17:49.643Z - error: uncaughtException: kill ENOSYS date=Sat Feb 22 2020 06:17:49 GMT-0800 (Pacific Standard Time), pid=13380, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=66666496, heapTotal=62554112, heapUsed=53157096, external=392156, loadavg=[0, 0, 0], uptime=813044, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-25T04:22:52.699Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-25T04:32:04.554Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T04:38:10.211Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T04:45:54.180Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T04:58:31.729Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:25:09.072Z - error: Error when processing OData POST: /odata/assets Error: Unable to find or read file C:\Users\PULKIT\Desktop\EMS\jsreport\shared\chart.js. ENOENT: no such file or directory, open 'C:\Users\PULKIT\Desktop\EMS\jsreport\shared\chart.js'
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at readFile (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-assets\lib\assets.js:115:20)
+caused by: Error: ENOENT: no such file or directory, open 'C:\Users\PULKIT\Desktop\EMS\jsreport\shared\chart.js'
+2020-02-25T05:29:31.693Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:45.815Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:47.101Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:47.928Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:48.673Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:49.251Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:49.560Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:49.832Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:50.149Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:50.421Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:50.698Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:50.924Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:51.100Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:31:51.367Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:33:10.852Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:33:11.669Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:33:11.967Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:33:12.146Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:33:12.842Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:33:13.147Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:34:20.368Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:34:55.166Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:36:28.760Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:36:30.156Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:36:41.637Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:36:57.378Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:38:54.739Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:39:14.859Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:43:40.264Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:44:17.296Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-25T05:44:46.573Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:45:52.792Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-02-25T05:47:56.571Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:22.410Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:24.816Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:25.018Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:25.194Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:25.409Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:25.578Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:25.752Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:25.929Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:26.151Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:26.313Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:26.529Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:49:40.665Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:50:05.567Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:50:47.302Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:51:35.838Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:52:56.374Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:53:45.453Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T05:57:50.733Z - error: uncaughtException: kill ENOSYS date=Mon Feb 24 2020 21:57:50 GMT-0800 (Pacific Standard Time), pid=5460, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=73666560, heapTotal=62029824, heapUsed=52939152, external=1174054, loadavg=[0, 0, 0], uptime=1042245, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-25T07:13:17.409Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:13:32.068Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:16:16.542Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:21:13.565Z - error: uncaughtException: kill ENOSYS date=Mon Feb 24 2020 23:21:13 GMT-0800 (Pacific Standard Time), pid=4608, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=87875584, heapTotal=67796992, heapUsed=57962096, external=854854, loadavg=[0, 0, 0], uptime=1047248, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-25T07:26:36.365Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:26:46.557Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:28:42.148Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:29:00.907Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:29:52.130Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:30:36.494Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:40:35.782Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:40:40.816Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:41:12.175Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-25T07:42:38.929Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-25T08:23:21.916Z - error: uncaughtException: kill ENOSYS date=Tue Feb 25 2020 00:23:21 GMT-0800 (Pacific Standard Time), pid=11096, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=78848000, heapTotal=58925056, heapUsed=49972624, external=781328, loadavg=[0, 0, 0], uptime=1050978, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-25T18:05:39.122Z - error: uncaughtException: kill ENOSYS date=Tue Feb 25 2020 10:05:39 GMT-0800 (Pacific Standard Time), pid=7244, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=63295488, heapTotal=58884096, heapUsed=50737128, external=605223, loadavg=[0, 0, 0], uptime=1085915, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-26T05:37:29.312Z - error: uncaughtException: kill ENOSYS date=Tue Feb 25 2020 21:37:29 GMT-0800 (Pacific Standard Time), pid=2384, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=72548352, heapTotal=64651264, heapUsed=52316272, external=742037, loadavg=[0, 0, 0], uptime=1127425, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-27T04:38:42.674Z - error: Error when processing OData POST: /odata/scripts Error: Entity with name "script" already exists in the /courseStudents folder.
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at validateDuplicatedName (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\folders\validateDuplicatedName.js:73:20)
+2020-02-27T04:45:21.635Z - error: Error when processing OData PATCH: /odata/templates(19hGjLx6KOG13RlH) Error: Entity (_id: 19hGjLx6KOG13RlH) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T04:45:21.743Z - error: Error when processing OData PATCH: /odata/templates(19hGjLx6KOG13RlH) Error: Entity (_id: 19hGjLx6KOG13RlH) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T05:21:59.318Z - error: Error when processing OData PATCH: /odata/templates(19hGjLx6KOG13RlH) Error: Entity (_id: 19hGjLx6KOG13RlH) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T05:21:59.400Z - error: Error when processing OData PATCH: /odata/templates(19hGjLx6KOG13RlH) Error: Entity (_id: 19hGjLx6KOG13RlH) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T05:37:20.070Z - error: Error when processing OData PATCH: /odata/templates(19hGjLx6KOG13RlH) Error: Entity (_id: 19hGjLx6KOG13RlH) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T18:32:05.046Z - error: Error when processing OData PATCH: /odata/templates(QuO0CNBThYw6B1dL) Error: Entity (_id: QuO0CNBThYw6B1dL) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T18:47:46.877Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-02-27T18:51:56.400Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-02-27T18:52:49.743Z - error: Error when processing OData PATCH: /odata/templates(QuO0CNBThYw6B1dL) Error: Entity (_id: QuO0CNBThYw6B1dL) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T18:53:05.291Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-02-27T20:50:00.228Z - error: Error when processing OData PATCH: /odata/scripts(vKSV1ZiRr5y6aPhb) Error: Entity (_id: vKSV1ZiRr5y6aPhb) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-02-27T21:03:22.602Z - error: uncaughtException: kill ENOSYS date=Thu Feb 27 2020 13:03:22 GMT-0800 (Pacific Standard Time), pid=11596, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=72888320, heapTotal=65175552, heapUsed=56134744, external=707688, loadavg=[0, 0, 0], uptime=1269379, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-28T04:47:55.596Z - error: uncaughtException: kill ENOSYS date=Thu Feb 27 2020 20:47:55 GMT-0800 (Pacific Standard Time), pid=7792, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=73691136, heapTotal=54165504, heapUsed=46729256, external=569065, loadavg=[0, 0, 0], uptime=1297252, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-28T05:11:04.834Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-28T05:11:49.317Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-28T05:33:51.707Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?
+undefined
+2020-02-28T05:50:57.253Z - error: uncaughtException: kill ENOSYS date=Thu Feb 27 2020 21:50:57 GMT-0800 (Pacific Standard Time), pid=5404, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=86159360, heapTotal=66748416, heapUsed=53379296, external=695471, loadavg=[0, 0, 0], uptime=1301033, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-28T15:00:36.243Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-28T17:12:52.671Z - error: Error during processing request at http://localhost:8001/api/report/dateReport, details: SyntaxError: Unexpected token d in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at normalizeJSONData (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\request.js:39:17)
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\request.js:30:23)
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\render.js:113:19)
+    at Reporter.render (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:291:12)
+    at Object.reporter.express.render (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:42:14)
+    at app.post (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:75:22)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:275:10)
+    at app.use (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:17:5)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:275:10)
+2020-02-28T17:13:45.964Z - error: Error during processing request at http://localhost:8001/api/report/dateReport, details: SyntaxError: Unexpected token d in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at normalizeJSONData (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\request.js:39:17)
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\request.js:30:23)
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\render.js:113:19)
+    at Reporter.render (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:291:12)
+    at Object.reporter.express.render (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:42:14)
+    at app.post (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:75:22)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:275:10)
+    at app.use (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:17:5)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:275:10)
+2020-02-28T17:43:55.078Z - error: uncaughtException: kill ENOSYS date=Fri Feb 28 2020 09:43:55 GMT-0800 (Pacific Standard Time), pid=10008, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=73752576, heapTotal=67272704, heapUsed=54826928, external=655390, loadavg=[0, 0, 0], uptime=1343811, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-29T05:06:03.201Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-29T05:06:20.906Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token o in JSON at position 1, stack: SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:194:15)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-02-29T06:04:43.304Z - error: uncaughtException: kill ENOSYS date=Fri Feb 28 2020 22:04:43 GMT-0800 (Pacific Standard Time), pid=12988, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=78921728, heapTotal=59408384, heapUsed=45746824, external=629507, loadavg=[0, 0, 0], uptime=1388259, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-02-29T12:01:51.275Z - error: [ { _id: '5e56b3e4aaa73130c45e072a',
+    name: 'Person 2',
+    email: 'pulkitjain708@gmail.com',
+    phone: '0987654321',
+    eid: 'E202012610732',
+    DoE: '2020-02-26T08:00:00.000Z' },
+  { _id: '5e56b4f3242fc63fbcc7fe34',
+    name: 'Person 3',
+    email: 'pjain2562.ca17@chitkara.edu.in',
+    phone: '1234567890',
+    eid: 'E202012610123',
+    DoE: '2020-02-26T08:00:00.000Z' },
+  d: [Circular] ]
+2020-03-02T04:44:18.178Z - error: uncaughtException: kill ENOSYS date=Sun Mar 01 2020 20:44:18 GMT-0800 (Pacific Standard Time), pid=2544, uid=null, gid=null, cwd=C:\Users\PULKIT\Desktop\EMS\jsreport, execPath=C:\Program Files\nodejs\node.exe, version=v10.15.3, argv=[C:\Program Files\nodejs\node.exe, C:\Users\PULKIT\Desktop\EMS\jsreport\server.js], rss=86175744, heapTotal=66748416, heapUsed=55790144, external=615339, loadavg=[0, 0, 0], uptime=1556234, trace=[column=13, file=internal/process/per_thread.js, function=process.kill, line=198, method=kill, native=false, column=15, file=C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js, function=process.listener, line=95, method=listener, native=false, column=13, file=events.js, function=process.emit, line=189, method=emit, native=false], stack=[Error: kill ENOSYS,     at process.kill (internal/process/per_thread.js:198:13),     at process.listener (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\signal-exit\index.js:95:15),     at process.emit (events.js:189:13)]
+2020-03-02T07:12:18.224Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:14:54.153Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:14:54.293Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:14:54.552Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:14:54.689Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:14:54.924Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:14:55.107Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:16:54.179Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:16:54.315Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:16:54.575Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:16:54.715Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:16:54.966Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:16:55.137Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:17:05.802Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:17:05.815Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:17:05.817Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:17:05.834Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:17:05.838Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:17:05.841Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:19:05.786Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:19:05.909Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:19:05.947Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:23:15.424Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:25:38.654Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:37:30.217Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:39:30.239Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:40:03.525Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:41:30.246Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:42:28.380Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:44:36.354Z - error: Error when processing OData PATCH: /odata/scripts(vKSV1ZiRr5y6aPhb) Error: Entity (_id: vKSV1ZiRr5y6aPhb) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-03-02T07:44:40.891Z - error: { d: undefined }
+2020-03-02T07:44:59.670Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:46:50.011Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T07:54:02.213Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T09:23:13.635Z - error: Error during processing request at http://localhost:8001/api/report, details: Could not parse report template, aren't you missing content type?, stack: undefined
+2020-03-02T15:38:52.925Z - error: [ {}, {}, {}, {}, {}, {}, d: [Circular] ]
+2020-03-02T15:40:03.169Z - error: Error during processing request at http://localhost:8001/api/report, details: Unexpected token S in JSON at position 0, stack: SyntaxError: Unexpected token S in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at normalizeJSONData (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\request.js:39:17)
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\request.js:30:23)
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\render\render.js:113:19)
+    at Reporter.render (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:291:12)
+    at Object.reporter.express.render (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:42:14)
+    at app.post (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:75:22)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:275:10)
+    at app.use (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-express\lib\routes.js:17:5)
+    at Layer.handle [as handle_request] (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\express\lib\router\index.js:275:10)
+2020-03-04T05:03:28.023Z - error: Error when processing OData PATCH: /odata/templates(QuO0CNBThYw6B1dL) Error: Entity (_id: QuO0CNBThYw6B1dL) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-03-04T05:03:28.052Z - error: Error when processing OData PATCH: /odata/templates(QuO0CNBThYw6B1dL) Error: Entity (_id: QuO0CNBThYw6B1dL) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-03-04T05:03:28.193Z - error: Error when processing OData PATCH: /odata/templates(QuO0CNBThYw6B1dL) Error: Entity (_id: QuO0CNBThYw6B1dL) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)
+2020-03-04T05:03:28.272Z - error: Error when processing OData PATCH: /odata/templates(QuO0CNBThYw6B1dL) Error: Entity (_id: QuO0CNBThYw6B1dL) was modified previously by another source
+    at module.exports (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\util\createError.js:11:13)
+    at Reporter.createError (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-core\lib\reporter.js:299:12)
+    at AsyncFunction.col.beforeUpdateListeners.insert (C:\Users\PULKIT\Desktop\EMS\jsreport\node_modules\jsreport-studio\lib\studio.js:799:30)

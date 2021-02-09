@@ -1,0 +1,76 @@
+<nav>
+  <div class="nav-wrapper blue lighten-3">
+    <a href="#" class="brand-logo">
+      <%if(utype==1){%> Admin , <%-data.aname%> <%} else if(utype==0){%> User ,
+      <%-data.name%> <%} else{%> CENTRAL ERP APP <%}%>
+    </a>
+    <% if(data.aname){%>
+      <ul id="nav-mobile" class="right ">
+        <li>
+          <a href="/logout">Logout</a>
+        </li>
+        <li>
+          <a href="#!" class="dropdown-trigger" data-target="courses"><i
+              class="material-icons right">arrow_drop_down</i>Courses</a>
+        </li>
+        <li>
+          <a href="#!" class="dropdown-trigger" data-target="enquiry">Enquiry<i
+              class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li>
+          <a class="dropdown-trigger" href="#!" data-target="staff"><i
+              class="material-icons right">arrow_drop_down</i>Staff</a>
+        </li>
+        <li>
+          <a href="/admin/reports">Reports</a>
+        </li>
+      </ul>
+      <%}%> <% if(data.name){%>
+      <ul id="nav-mobile" class="right ">
+        <li>
+          <a href="/logout">Logout</a>
+        </li>
+        <li>
+          <a href="#!" class="dropdown-trigger" data-target="enquiry">Enquiry<i
+              class="material-icons right">arrow_drop_down</i></a>
+        </li>
+        <li>
+          <a href="/user/reports">Reports</a>
+        </li>
+      </ul>
+      <%}%>
+  </div>
+</nav>
+
+<%if(utype==1){%>
+      <ul id="courses" class="dropdown-content">
+        <li><a href="/admin/addCourse">Add Courses</a></li>
+        <li><a href="/admin/viewCourse">View Courses</a></li>
+      </ul>
+
+      <ul id="enquiry" class="dropdown-content">
+        <li><a href="/admin/viewReg">View Registrations</a></li>
+        <li><a href="/admin/addEnquiry">Add Enquiries</a></li>
+        <li><a href="/admin/viewEnquiry">View Enquiries</a></li>
+      </ul>
+
+      <ul id="staff" class="dropdown-content">
+        <li><a href="/admin/addStaff">Add Staff</a></li>
+        <li><a href="/admin/staffTable">View Staff</a></li>
+      </ul>
+      <%}else if(utype==0){%>
+      <ul id="enquiry" class="dropdown-content">
+        <li><a href="/user/addEnquiry">Add Enquiries</a></li>
+        <li><a href="/user/viewEnquiry">View Enquiries</a></li>
+        <li><a href="/user/viewReg">View Registrations</a></li>
+      </ul>
+      <%}%>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    var dropdowns = document.querySelectorAll(".dropdown-trigger");
+    for (var i = 0; i < dropdowns.length; i++) {
+      M.Dropdown.init(dropdowns[i]);
+    }
+  });
+</script>

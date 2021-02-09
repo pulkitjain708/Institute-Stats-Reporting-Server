@@ -1,0 +1,23 @@
+{
+    "folder": {
+        "shortid": "r7di~ku"
+    },
+    "shortid": "r1eq7JI4EI",
+    "name": "reg",
+    "recipe": "chrome-pdf",
+    "engine": "ejs",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": "2020-02-26T20:03:49.031Z",
+    "modificationDate": {
+        "$$date": 1582747686992
+    },
+    "_id": "GuVSKYecw4eUz2bs",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "rJlYn18NEL"
+        }
+    ]
+}
